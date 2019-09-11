@@ -9,3 +9,13 @@
 2. 구현이 아닌 인터페이스에 맞춰서 프로그래밍한다.
 3. 상속보다는 구성을 활용한다.
 
+# 구현
+```java
+public class Main {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+```
