@@ -9,6 +9,9 @@
 2. 구현이 아닌 인터페이스에 맞춰서 프로그래밍한다.
 3. 상속보다는 구성을 활용한다.
 
+# UML
+<img width="1000" src="https://user-images.githubusercontent.com/49146043/64711631-dc9e9580-d4f4-11e9-9369-63708055c88f.png">
+
 # 구현
 ### 1. 로봇의 이동, 공격 기능에 대한 인터페이스(Stategy)
 
@@ -228,5 +231,3 @@ public class Main {
 ================
 
 ```
-# UML
-<img width="1000" src="https://user-images.githubusercontent.com/49146043/64711631-dc9e9580-d4f4-11e9-9369-63708055c88f.png">
