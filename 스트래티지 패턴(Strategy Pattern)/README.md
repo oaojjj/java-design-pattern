@@ -9,6 +9,50 @@
 2. 구현이 아닌 인터페이스에 맞춰서 프로그래밍한다.
 3. 상속보다는 구성을 활용한다.
 
+## 쓰임새
+1. 기존에 추가된 객체의 동작을 변경하려는 경우<br>
+Robot 추상클래스를 만들고 상속받아 객체화 시켰을 때, attack이나 move를 수정하고싶으면 기존의 코드를 수정해야 한다.<br> 하지만 그런 경우 새로운 기능을 위해 기존의 속성을 변경해야 하기에 OCP를 위반하는 행위이다.<br>
+```java
+public abstract class Robot {
+    public Robot() {}
+    private String name;
+    
+    public Robot(String name) {
+        this.name = name;
+    }
+    
+    abstract void attck();
+    abstract void move();
+}
+
+// 아이언맨
+public class IronMan extends Robot {
+    public IronMan() {}
+ 
+    public IronMan(String name) {
+        super(name);
+    }
+ 
+    @Override
+    void attck() {
+        System.out.println("미사일 발사");
+    }
+    
+     @Override
+    void move() {
+        System.out.println("보행가능,비행가능");
+    }
+ 
+}
+.
+.
+.
+
+```
+2. 새로운 객체가 추가되었을 경우<br>
+새로운 로봇 아톰이 추가되었을 때 아이언맨의 move 메소드를 동일하게 사용하고 싶지만 별도로 만들어 주어야 한다.<br> 그렇게 되면 중복된 코드를 만들기 때문에 좋지 않다.
+
+
 # UML
 <img width="1000" src="https://user-images.githubusercontent.com/49146043/64711631-dc9e9580-d4f4-11e9-9369-63708055c88f.png">
 
