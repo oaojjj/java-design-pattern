@@ -45,5 +45,5 @@ public class Singleton {
 }
 ```
 위의 방법은 객체가 필요할 때로 초기화를 미루는 것이다.<br>
-Singleton 클래스 내부의 LazyHolder 클래스를 정적 초기화시 인스턴스를 생성하고 getInstance 메서드를 호출하여  반환한다.
+Singleton 클래스 내부의 LazyHolder 클래스를 정적 초기화시 인스턴스를 생성하고 getInstance 메서드를 호출하여  반환한다.<br>
 참고 문서 : http://friday.fun25.co.kr/blog/?p=312
